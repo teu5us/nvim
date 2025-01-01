@@ -35,11 +35,12 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
             settings = {
-                python = {
+                basedpyright = {
                     analysis = {
                         autoSearchPaths = true,
                         diagnosticMode = "workspace",
-                        useLibraryCodeForTypes = true
+                        useLibraryCodeForTypes = true,
+                        typeCheckingMode = "standard",
                     }
                 }
             }
